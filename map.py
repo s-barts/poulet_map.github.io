@@ -170,7 +170,7 @@ pubs = {
     "The Crosse Keys": (51.5132, -0.0837),     # Starting Point (9 Gracechurch St)
     "Simmons Bank": (51.5130, -0.0901),        # 20 Cornhill
     "The Hydrant": (51.5102, -0.0853),         # 27 Monument Street
-    "The Banker": (51.5093, -0.0824),          # EC4R 3TE
+    "The Banker": (51.5093, -0.0916),          # EC4R 3TE
     "Hamilton Hall": (51.5181, -0.0813)        # Liverpool Street Station
 }
 
