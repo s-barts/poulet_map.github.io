@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff96c19670a8c53aba57eda998aec4ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ff96c19670a8c53aba57eda998aec4ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ff96c19670a8c53aba57eda998aec4ae = L.map(
+                "map_ff96c19670a8c53aba57eda998aec4ae",
+                {
+                    center: [51.5132, -0.0837],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4bc2fc212f6ab06cb735ab62141238f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4bc2fc212f6ab06cb735ab62141238f5.addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var marker_1fd53a72c8ff0f423ffdd48473c6e073 = L.marker(
+                [51.5129, -0.0832],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_1ea6a2587ac456258224207f25ad7e90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1fd53a72c8ff0f423ffdd48473c6e073.setIcon(icon_1ea6a2587ac456258224207f25ad7e90);
+        
+    
+        var popup_77f5df0799643bdc41c884cd657fbe5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b5df5f8b981d58d651630217cbdf18e = $(`<div id="html_3b5df5f8b981d58d651630217cbdf18e" style="width: 100.0%; height: 100.0%;"><b>The Lamb Tavern</b><br>Postcode: EC3V 1LR</div>`)[0];
+                popup_77f5df0799643bdc41c884cd657fbe5c.setContent(html_3b5df5f8b981d58d651630217cbdf18e);
+            
+        
+
+        marker_1fd53a72c8ff0f423ffdd48473c6e073.bindPopup(popup_77f5df0799643bdc41c884cd657fbe5c)
+        ;
+
+        
+    
+    
+            marker_1fd53a72c8ff0f423ffdd48473c6e073.bindTooltip(
+                `<div>
+                     The Lamb Tavern
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3fe688e1c3f48212d122be42fda22a05 = L.marker(
+                [51.513, -0.083],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_08a4b73f9116f6222867596b9b8fb541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3fe688e1c3f48212d122be42fda22a05.setIcon(icon_08a4b73f9116f6222867596b9b8fb541);
+        
+    
+        var popup_c00b503d72da061a2296a9ba2b92f42b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c16319391db1349146d97b42b62af335 = $(`<div id="html_c16319391db1349146d97b42b62af335" style="width: 100.0%; height: 100.0%;"><b>The Grapes (Leadenhall)</b><br>Postcode: EC3M 7AN</div>`)[0];
+                popup_c00b503d72da061a2296a9ba2b92f42b.setContent(html_c16319391db1349146d97b42b62af335);
+            
+        
+
+        marker_3fe688e1c3f48212d122be42fda22a05.bindPopup(popup_c00b503d72da061a2296a9ba2b92f42b)
+        ;
+
+        
+    
+    
+            marker_3fe688e1c3f48212d122be42fda22a05.bindTooltip(
+                `<div>
+                     The Grapes (Leadenhall)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_412b6cbb2dbf9c5de6af115123d1e9c0 = L.marker(
+                [51.5173, -0.0851],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_6dea2e046e6adc85a13e0e3ee3c6d157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_412b6cbb2dbf9c5de6af115123d1e9c0.setIcon(icon_6dea2e046e6adc85a13e0e3ee3c6d157);
+        
+    
+        var popup_38edaa9e29cfe61407490c53a6435a87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11087ab3eb10e2caed743ef5b8cf127a = $(`<div id="html_11087ab3eb10e2caed743ef5b8cf127a" style="width: 100.0%; height: 100.0%;"><b>Red Lion (Eldon Street)</b><br>Postcode: EC2M 7QF</div>`)[0];
+                popup_38edaa9e29cfe61407490c53a6435a87.setContent(html_11087ab3eb10e2caed743ef5b8cf127a);
+            
+        
+
+        marker_412b6cbb2dbf9c5de6af115123d1e9c0.bindPopup(popup_38edaa9e29cfe61407490c53a6435a87)
+        ;
+
+        
+    
+    
+            marker_412b6cbb2dbf9c5de6af115123d1e9c0.bindTooltip(
+                `<div>
+                     Red Lion (Eldon Street)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f78aee01376c20ef6f07c357dee6cbf = L.marker(
+                [51.5186, -0.0886],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_e0aa1882cfa604132de070bba63a4541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f78aee01376c20ef6f07c357dee6cbf.setIcon(icon_e0aa1882cfa604132de070bba63a4541);
+        
+    
+        var popup_e42d24b1d532371a6451af19f4bf267e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_591ca182cc2efe45802841b903eee230 = $(`<div id="html_591ca182cc2efe45802841b903eee230" style="width: 100.0%; height: 100.0%;"><b>The Globe</b><br>Postcode: EC2M 6SA</div>`)[0];
+                popup_e42d24b1d532371a6451af19f4bf267e.setContent(html_591ca182cc2efe45802841b903eee230);
+            
+        
+
+        marker_5f78aee01376c20ef6f07c357dee6cbf.bindPopup(popup_e42d24b1d532371a6451af19f4bf267e)
+        ;
+
+        
+    
+    
+            marker_5f78aee01376c20ef6f07c357dee6cbf.bindTooltip(
+                `<div>
+                     The Globe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8cd50601dd3b93e11a0177defdac3df = L.marker(
+                [51.516, -0.1013],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_3cbb0b0263aae9d20182b4687ecf40e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a8cd50601dd3b93e11a0177defdac3df.setIcon(icon_3cbb0b0263aae9d20182b4687ecf40e0);
+        
+    
+        var popup_612273824b890b72f9aa09427d79ea06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f6f307c6c6b3d222b3cb1ad8938993 = $(`<div id="html_55f6f307c6c6b3d222b3cb1ad8938993" style="width: 100.0%; height: 100.0%;"><b>The Magpie</b><br>Postcode: EC4M 7EP</div>`)[0];
+                popup_612273824b890b72f9aa09427d79ea06.setContent(html_55f6f307c6c6b3d222b3cb1ad8938993);
+            
+        
+
+        marker_a8cd50601dd3b93e11a0177defdac3df.bindPopup(popup_612273824b890b72f9aa09427d79ea06)
+        ;
+
+        
+    
+    
+            marker_a8cd50601dd3b93e11a0177defdac3df.bindTooltip(
+                `<div>
+                     The Magpie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_016e62a2194c568fe57419caf63a6f95 = L.marker(
+                [51.5152, -0.0924],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_1eb58b8d620d1b58837b4fa673ddec1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_016e62a2194c568fe57419caf63a6f95.setIcon(icon_1eb58b8d620d1b58837b4fa673ddec1a);
+        
+    
+        var popup_0457a45106a37124a9639810dda20d2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5802d1a374b786ed7e20f5621011dbd6 = $(`<div id="html_5802d1a374b786ed7e20f5621011dbd6" style="width: 100.0%; height: 100.0%;"><b>Old Doctor Butler's Head</b><br>Postcode: EC2V 5BT</div>`)[0];
+                popup_0457a45106a37124a9639810dda20d2c.setContent(html_5802d1a374b786ed7e20f5621011dbd6);
+            
+        
+
+        marker_016e62a2194c568fe57419caf63a6f95.bindPopup(popup_0457a45106a37124a9639810dda20d2c)
+        ;
+
+        
+    
+    
+            marker_016e62a2194c568fe57419caf63a6f95.bindTooltip(
+                `<div>
+                     Old Doctor Butler's Head
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_358d5b7874f1aaf3efd2d2c186075bf3 = L.marker(
+                [51.5167, -0.0939],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_0c545558ca2575a9904986f9a8a8d106 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_358d5b7874f1aaf3efd2d2c186075bf3.setIcon(icon_0c545558ca2575a9904986f9a8a8d106);
+        
+    
+        var popup_f24d2e84c3ab1456679668841ef9dd96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d18fb6441cfa10b600ed9aefd5d28a22 = $(`<div id="html_d18fb6441cfa10b600ed9aefd5d28a22" style="width: 100.0%; height: 100.0%;"><b>The Trading House</b><br>Postcode: EC2V 7NQ</div>`)[0];
+                popup_f24d2e84c3ab1456679668841ef9dd96.setContent(html_d18fb6441cfa10b600ed9aefd5d28a22);
+            
+        
+
+        marker_358d5b7874f1aaf3efd2d2c186075bf3.bindPopup(popup_f24d2e84c3ab1456679668841ef9dd96)
+        ;
+
+        
+    
+    
+            marker_358d5b7874f1aaf3efd2d2c186075bf3.bindTooltip(
+                `<div>
+                     The Trading House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3c2279ecd70b69f8afb6cf4e4cb74fbd = L.marker(
+                [51.5126, -0.0802],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_56b6b22ee6b6bc9163b8a0671bf3b8ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3c2279ecd70b69f8afb6cf4e4cb74fbd.setIcon(icon_56b6b22ee6b6bc9163b8a0671bf3b8ed);
+        
+    
+        var popup_b10fda96c59af0a4619fb283da6ad0a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7207383a41d1c34483dd34a89b2a9d56 = $(`<div id="html_7207383a41d1c34483dd34a89b2a9d56" style="width: 100.0%; height: 100.0%;"><b>The Golden Fleece</b><br>Postcode: EC3A 5BU</div>`)[0];
+                popup_b10fda96c59af0a4619fb283da6ad0a4.setContent(html_7207383a41d1c34483dd34a89b2a9d56);
+            
+        
+
+        marker_3c2279ecd70b69f8afb6cf4e4cb74fbd.bindPopup(popup_b10fda96c59af0a4619fb283da6ad0a4)
+        ;
+
+        
+    
+    
+            marker_3c2279ecd70b69f8afb6cf4e4cb74fbd.bindTooltip(
+                `<div>
+                     The Golden Fleece
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c5d144cccdab53b788b9bd30fd30d52b = L.marker(
+                [51.5153, -0.097],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_0940a8c9563ebf5dee061061e0a95fcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c5d144cccdab53b788b9bd30fd30d52b.setIcon(icon_0940a8c9563ebf5dee061061e0a95fcb);
+        
+    
+        var popup_02df4f74602eeedb0e9063e6fc894dbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c4076b849be2cdd01c8562edaebc3af = $(`<div id="html_8c4076b849be2cdd01c8562edaebc3af" style="width: 100.0%; height: 100.0%;"><b>The Pavilion End</b><br>Postcode: EC4M 9BR</div>`)[0];
+                popup_02df4f74602eeedb0e9063e6fc894dbc.setContent(html_8c4076b849be2cdd01c8562edaebc3af);
+            
+        
+
+        marker_c5d144cccdab53b788b9bd30fd30d52b.bindPopup(popup_02df4f74602eeedb0e9063e6fc894dbc)
+        ;
+
+        
+    
+    
+            marker_c5d144cccdab53b788b9bd30fd30d52b.bindTooltip(
+                `<div>
+                     The Pavilion End
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7c06b68042eab7494f0fe900c957b25 = L.marker(
+                [51.5163, -0.0984],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_73941e998d5269e490f896f631d86407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7c06b68042eab7494f0fe900c957b25.setIcon(icon_73941e998d5269e490f896f631d86407);
+        
+    
+        var popup_bf85a0d2cd7cad5985ef720e8501348e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fc31c3d989a34c1a5f85e59a9e5a2c4 = $(`<div id="html_1fc31c3d989a34c1a5f85e59a9e5a2c4" style="width: 100.0%; height: 100.0%;"><b>The Cock and Woolpack</b><br>Postcode: EC1A 9ER</div>`)[0];
+                popup_bf85a0d2cd7cad5985ef720e8501348e.setContent(html_1fc31c3d989a34c1a5f85e59a9e5a2c4);
+            
+        
+
+        marker_e7c06b68042eab7494f0fe900c957b25.bindPopup(popup_bf85a0d2cd7cad5985ef720e8501348e)
+        ;
+
+        
+    
+    
+            marker_e7c06b68042eab7494f0fe900c957b25.bindTooltip(
+                `<div>
+                     The Cock and Woolpack
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cab4fb21bfb3cec3743e2dcb6080d92f = L.marker(
+                [51.5161, -0.0931],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_959c587096e4b34aaf2a115df675235c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cab4fb21bfb3cec3743e2dcb6080d92f.setIcon(icon_959c587096e4b34aaf2a115df675235c);
+        
+    
+        var popup_353e6c8d1c5c5382c188c977bfcc1893 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beeb463bfdbe74b9226db6f4cacb38a0 = $(`<div id="html_beeb463bfdbe74b9226db6f4cacb38a0" style="width: 100.0%; height: 100.0%;"><b>The Sugar Loaf</b><br>Postcode: EC2V 7NQ</div>`)[0];
+                popup_353e6c8d1c5c5382c188c977bfcc1893.setContent(html_beeb463bfdbe74b9226db6f4cacb38a0);
+            
+        
+
+        marker_cab4fb21bfb3cec3743e2dcb6080d92f.bindPopup(popup_353e6c8d1c5c5382c188c977bfcc1893)
+        ;
+
+        
+    
+    
+            marker_cab4fb21bfb3cec3743e2dcb6080d92f.bindTooltip(
+                `<div>
+                     The Sugar Loaf
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9f61a64362cc94633f2c4a72daa6790 = L.marker(
+                [51.5101, -0.0857],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_98dd05f475f5072da04af15e18702a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d9f61a64362cc94633f2c4a72daa6790.setIcon(icon_98dd05f475f5072da04af15e18702a3b);
+        
+    
+        var popup_f516db28e8834833abeeb1059181369c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e78759e0358f915dccc9c4779dc338bc = $(`<div id="html_e78759e0358f915dccc9c4779dc338bc" style="width: 100.0%; height: 100.0%;"><b>The Monument</b><br>Postcode: EC3R 6AJ</div>`)[0];
+                popup_f516db28e8834833abeeb1059181369c.setContent(html_e78759e0358f915dccc9c4779dc338bc);
+            
+        
+
+        marker_d9f61a64362cc94633f2c4a72daa6790.bindPopup(popup_f516db28e8834833abeeb1059181369c)
+        ;
+
+        
+    
+    
+            marker_d9f61a64362cc94633f2c4a72daa6790.bindTooltip(
+                `<div>
+                     The Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ab80d10e137152d76bff51ca0076b235 = L.marker(
+                [51.5095, -0.0801],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_83db2b9687f02e9a85142d5f2c779232 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ab80d10e137152d76bff51ca0076b235.setIcon(icon_83db2b9687f02e9a85142d5f2c779232);
+        
+    
+        var popup_2612f50a82c4e5f7547accb0db7e6f90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c8c58d63e67e2fb8214a7edcd27029b = $(`<div id="html_5c8c58d63e67e2fb8214a7edcd27029b" style="width: 100.0%; height: 100.0%;"><b>The Hung, Drawn and Quartered</b><br>Postcode: EC3R 5AQ</div>`)[0];
+                popup_2612f50a82c4e5f7547accb0db7e6f90.setContent(html_5c8c58d63e67e2fb8214a7edcd27029b);
+            
+        
+
+        marker_ab80d10e137152d76bff51ca0076b235.bindPopup(popup_2612f50a82c4e5f7547accb0db7e6f90)
+        ;
+
+        
+    
+    
+            marker_ab80d10e137152d76bff51ca0076b235.bindTooltip(
+                `<div>
+                     The Hung, Drawn and Quartered
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ceabb66b01b863df69c5f3aa8b2dff18 = L.marker(
+                [51.5088, -0.0774],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_2c68759a49461b262deee470e037efc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ceabb66b01b863df69c5f3aa8b2dff18.setIcon(icon_2c68759a49461b262deee470e037efc8);
+        
+    
+        var popup_80760405db4fcd5e8b10a4b41d492746 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98291f43ee7f35fc253b9ca7ec93025d = $(`<div id="html_98291f43ee7f35fc253b9ca7ec93025d" style="width: 100.0%; height: 100.0%;"><b>The Liberty Bounds</b><br>Postcode: EC3N 4AA</div>`)[0];
+                popup_80760405db4fcd5e8b10a4b41d492746.setContent(html_98291f43ee7f35fc253b9ca7ec93025d);
+            
+        
+
+        marker_ceabb66b01b863df69c5f3aa8b2dff18.bindPopup(popup_80760405db4fcd5e8b10a4b41d492746)
+        ;
+
+        
+    
+    
+            marker_ceabb66b01b863df69c5f3aa8b2dff18.bindTooltip(
+                `<div>
+                     The Liberty Bounds
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_548df06c55155f321e9e9de19ade33d2 = L.marker(
+                [51.5124, -0.0969],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_b066a49371bf2857b24c56202d4932bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_548df06c55155f321e9e9de19ade33d2.setIcon(icon_b066a49371bf2857b24c56202d4932bb);
+        
+    
+        var popup_fbb003e5c62ad5221fe3040363bd1e06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d9b7fcbf379cf5cfd423a9506aee9c2 = $(`<div id="html_4d9b7fcbf379cf5cfd423a9506aee9c2" style="width: 100.0%; height: 100.0%;"><b>The Wren Tavern</b><br>Postcode: EC4V 4BJ</div>`)[0];
+                popup_fbb003e5c62ad5221fe3040363bd1e06.setContent(html_4d9b7fcbf379cf5cfd423a9506aee9c2);
+            
+        
+
+        marker_548df06c55155f321e9e9de19ade33d2.bindPopup(popup_fbb003e5c62ad5221fe3040363bd1e06)
+        ;
+
+        
+    
+    
+            marker_548df06c55155f321e9e9de19ade33d2.bindTooltip(
+                `<div>
+                     The Wren Tavern
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0441aa86b768301414ec0b9e066810bc = L.marker(
+                [51.5132, -0.0837],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_ea8df93b0a15745e01f38c636d53bd42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0441aa86b768301414ec0b9e066810bc.setIcon(icon_ea8df93b0a15745e01f38c636d53bd42);
+        
+    
+        var popup_2964cafb828181ef76539fe5d93166e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85372f5f08cccda8e6e83d8faeec801a = $(`<div id="html_85372f5f08cccda8e6e83d8faeec801a" style="width: 100.0%; height: 100.0%;"><b>The Crosse Keys</b><br>Postcode: EC3V 0DR</div>`)[0];
+                popup_2964cafb828181ef76539fe5d93166e7.setContent(html_85372f5f08cccda8e6e83d8faeec801a);
+            
+        
+
+        marker_0441aa86b768301414ec0b9e066810bc.bindPopup(popup_2964cafb828181ef76539fe5d93166e7)
+        ;
+
+        
+    
+    
+            marker_0441aa86b768301414ec0b9e066810bc.bindTooltip(
+                `<div>
+                     The Crosse Keys
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce29ef70be3ab09662243b17940cbd4b = L.marker(
+                [51.513, -0.0901],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_0d0f23cc9293c2afdec851d65478bb99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce29ef70be3ab09662243b17940cbd4b.setIcon(icon_0d0f23cc9293c2afdec851d65478bb99);
+        
+    
+        var popup_d63d2cecd77a0a7be383ce3f780b6938 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcdca7d63b0bf32ce067f434a6b91379 = $(`<div id="html_bcdca7d63b0bf32ce067f434a6b91379" style="width: 100.0%; height: 100.0%;"><b>Simmons Bank</b><br>Postcode: EC4N 8AR</div>`)[0];
+                popup_d63d2cecd77a0a7be383ce3f780b6938.setContent(html_bcdca7d63b0bf32ce067f434a6b91379);
+            
+        
+
+        marker_ce29ef70be3ab09662243b17940cbd4b.bindPopup(popup_d63d2cecd77a0a7be383ce3f780b6938)
+        ;
+
+        
+    
+    
+            marker_ce29ef70be3ab09662243b17940cbd4b.bindTooltip(
+                `<div>
+                     Simmons Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c04ca268eace83f335a33f2f9629c96b = L.marker(
+                [51.5102, -0.0853],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_889a0c6d6ca947169e6fa3ba170b829a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c04ca268eace83f335a33f2f9629c96b.setIcon(icon_889a0c6d6ca947169e6fa3ba170b829a);
+        
+    
+        var popup_728180ce5f772906681e5a5f9765a91c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_771543b637bb29aca7e21ea1c1014c1b = $(`<div id="html_771543b637bb29aca7e21ea1c1014c1b" style="width: 100.0%; height: 100.0%;"><b>The Hydrant</b><br>Postcode: EC3R 6LJ</div>`)[0];
+                popup_728180ce5f772906681e5a5f9765a91c.setContent(html_771543b637bb29aca7e21ea1c1014c1b);
+            
+        
+
+        marker_c04ca268eace83f335a33f2f9629c96b.bindPopup(popup_728180ce5f772906681e5a5f9765a91c)
+        ;
+
+        
+    
+    
+            marker_c04ca268eace83f335a33f2f9629c96b.bindTooltip(
+                `<div>
+                     The Hydrant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff4438145fe78c6b2c2c2a0700528210 = L.marker(
+                [51.5093, -0.0824],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_7d647c1f1d773dc413a90b23ace09dae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff4438145fe78c6b2c2c2a0700528210.setIcon(icon_7d647c1f1d773dc413a90b23ace09dae);
+        
+    
+        var popup_29fb1563183d64b6c58d21b0a68c490b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4013cd54c893e7a575e2d6e950b7c277 = $(`<div id="html_4013cd54c893e7a575e2d6e950b7c277" style="width: 100.0%; height: 100.0%;"><b>The Banker</b><br>Postcode: EC4R 3TE</div>`)[0];
+                popup_29fb1563183d64b6c58d21b0a68c490b.setContent(html_4013cd54c893e7a575e2d6e950b7c277);
+            
+        
+
+        marker_ff4438145fe78c6b2c2c2a0700528210.bindPopup(popup_29fb1563183d64b6c58d21b0a68c490b)
+        ;
+
+        
+    
+    
+            marker_ff4438145fe78c6b2c2c2a0700528210.bindTooltip(
+                `<div>
+                     The Banker
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec6dd95136a4ae47cbed82004839acf1 = L.marker(
+                [51.5181, -0.0813],
+                {
+}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var icon_4abc62530c63bb3f2aba0dd4d7a5f3f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "beer",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ec6dd95136a4ae47cbed82004839acf1.setIcon(icon_4abc62530c63bb3f2aba0dd4d7a5f3f3);
+        
+    
+        var popup_23cd25bea6afccd454e0749572258652 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8aba2bf2d12ca2b771e82d9853057b6c = $(`<div id="html_8aba2bf2d12ca2b771e82d9853057b6c" style="width: 100.0%; height: 100.0%;"><b>Hamilton Hall</b><br>Postcode: EC2M 7PY</div>`)[0];
+                popup_23cd25bea6afccd454e0749572258652.setContent(html_8aba2bf2d12ca2b771e82d9853057b6c);
+            
+        
+
+        marker_ec6dd95136a4ae47cbed82004839acf1.bindPopup(popup_23cd25bea6afccd454e0749572258652)
+        ;
+
+        
+    
+    
+            marker_ec6dd95136a4ae47cbed82004839acf1.bindTooltip(
+                `<div>
+                     Hamilton Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f31fca09ea684cf67fc49fce76d6f364 = L.polyline(
+                [[51.516, -0.1013], [51.5186, -0.0886], [51.5181, -0.0813], [51.5088, -0.0774], [51.5093, -0.0824], [51.5124, -0.0969], [51.516, -0.1013]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_ff96c19670a8c53aba57eda998aec4ae);
+        
+    
+            var measure_control_8ae97e726c4145f199ae6ea2411222b2 = new L.Control.Measure(
+                {
+  "position": "bottomleft",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_ff96c19670a8c53aba57eda998aec4ae.addControl(measure_control_8ae97e726c4145f199ae6ea2411222b2);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>
